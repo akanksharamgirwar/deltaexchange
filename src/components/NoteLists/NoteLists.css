@@ -1,0 +1,101 @@
+.multiselect {
+  width: 200px;
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem 0 1rem;
+  position: relative;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border: 1px #dadada solid;
+  min-width: 130px;
+  text-align: left;
+  padding: 6px;
+  max-height: 110px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  background: white;
+  top: 132px;
+  font-size: 16px;
+}
+.status-list select option {
+  font-size: 16px;
+}
+
+#checkboxes label {
+  display: block;
+  padding-bottom: 4px;
+  cursor: pointer;
+}
+
+#checkboxes label input {
+  margin-right: 4px;
+}
+
+select {
+  background: white;
+  border: 1px solid #a9a9a9;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+#notes-table {
+  width: 100%;
+  text-align: left;
+}
+
+#notes-table td,
+#notes-table th {
+  padding: 8px;
+}
+
+#notes-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#notes-table tr:hover {
+  background-color: #ddd;
+}
+
+#notes-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+select:focus-visible {
+  outline: none;
+}
+
+img,
+.status-list select,
+.multiselect {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #checkboxes {
+    top: 161px;
+  }
+}
